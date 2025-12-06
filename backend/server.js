@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 app.use('/api/products', require('./routes/products'));
 app.use('/api/orders', require('./routes/orders'));
 app.use('/api/users', require('./routes/users'));
+app.use('/api/auth', require('./routes/auth'));
 
 // 404 handler
 app.use((req, res) => {
